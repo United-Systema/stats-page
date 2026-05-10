@@ -1,39 +1,194 @@
 settings:
-  title: 'Status Page'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
-  logo: logo-192x192.png # image in ./public/ folder
-  daysInHistogram: 90 # number of days you want to display in histogram
-  collectResponseTimes: true # collects avg response times from CRON locations
-
-  allmonitorsOperational: 'All Systems Operational'
-  notAllmonitorsOperational: 'Not All Systems Operational'
-  monitorLabelOperational: 'Operational'
-  monitorLabelNotOperational: 'Not Operational'
-  monitorLabelNoData: 'No data'
-  dayInHistogramNoData: 'No data'
-  dayInHistogramOperational: 'All good'
-  dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
+  title: "United Systema Status Page"
+  url: "https://stats-page.pages.dev"
+  displayDays: 90
+  collectResponseTimes: false
+  notifySlack: false
+  notifyTelegram: false
+  notifyDiscord: false
 
 monitors:
-  - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
-    description: 'You write code. They handle the rest.' # default=empty
-    url: 'https://workers.cloudflare.com/' # URL to fetch
-    method: GET # default=GET
-    expectStatus: 200 # operational status, default=200
-    followRedirect: false # should fetch follow redirects, default=false
-    linkable: false # allows the title to be a link, default=true
-
-  - id: www-cloudflare-com
-    name: www.cloudflare.com
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.cloudflare.com'
+  - id: book4me-app
+    name: book4me.app
+    url: "https://book4me.app"
     method: GET
-    expectStatus: 200
-    linkable: true # allows the title to be a link, default=true
 
-  - id: blog-cloudflare-com
-    name: The Cloudflare Blog
-    url: 'https://blog.cloudflare.com/'
+  - id: book4me-dev
+    name: book4me.dev
+    url: "https://book4me.dev"
     method: GET
-    expectStatus: 200
+
+  - id: book4me-net
+    name: book4me.net
+    url: "https://book4me.net"
+    method: GET
+
+  - id: emailframer-app
+    name: emailframer.app
+    url: "https://emailframer.app"
+    method: GET
+
+  - id: emailframer-com
+    name: emailframer.com
+    url: "https://emailframer.com"
+    method: GET
+
+  - id: evencia-app
+    name: evencia.app
+    url: "https://evencia.app"
+    method: GET
+
+  - id: evencia-dev
+    name: evencia.dev
+    url: "https://evencia.dev"
+    method: GET
+
+  - id: evencia-io
+    name: evencia.io
+    url: "https://evencia.io"
+    method: GET
+
+  - id: fafconnect-org
+    name: fafconnect.org
+    url: "https://fafconnect.org"
+    method: GET
+
+  - id: fts-zuerich-ch
+    name: fts-zuerich.ch
+    url: "https://fts-zuerich.ch"
+    method: GET
+
+  - id: gate-pass-app
+    name: gate-pass.app
+    url: "https://gate-pass.app"
+    method: GET
+
+  - id: gate-pass-me
+    name: gate-pass.me
+    url: "https://gate-pass.me"
+    method: GET
+
+  - id: gatepass-me
+    name: gatepass.me
+    url: "https://gatepass.me"
+    method: GET
+
+  - id: gate-pass-qa
+    name: gate-pass.qa
+    url: "https://gate-pass.qa"
+    method: GET
+
+  - id: gate-pass-tn
+    name: gate-pass.tn
+    url: "https://gate-pass.tn"
+    method: GET
+
+  - id: getseat-app
+    name: getseat.app
+    url: "https://getseat.app"
+    method: GET
+
+  - id: getseat-dev
+    name: getseat.dev
+    url: "https://getseat.dev"
+    method: GET
+
+  - id: go-active-me
+    name: go-active.me
+    url: "https://go-active.me"
+    method: GET
+
+  - id: int-vandesign-com
+    name: int-vandesign.com
+    url: "https://int-vandesign.com"
+    method: GET
+
+  - id: intvandesign-com
+    name: intvandesign.com
+    url: "https://intvandesign.com"
+    method: GET
+
+  - id: myvoucher-me
+    name: myvoucher.me
+    url: "https://myvoucher.me"
+    method: GET
+
+  - id: pathuniq-com
+    name: pathuniq.com
+    url: "https://pathuniq.com"
+    method: GET
+
+  - id: psgacademy-qa
+    name: psgacademy.qa
+    url: "https://psgacademy.qa"
+    method: GET
+
+  - id: sporti-fy-app
+    name: sporti-fy.app
+    url: "https://sporti-fy.app"
+    method: GET
+
+  - id: sporti-fy-io
+    name: sporti-fy.io
+    url: "https://sporti-fy.io"
+    method: GET
+
+  - id: sporti-fy-me
+    name: sporti-fy.me
+    url: "https://sporti-fy.me"
+    method: GET
+
+  - id: sportrago-com
+    name: sportrago.com
+    url: "https://sportrago.com"
+    method: GET
+
+  - id: sportra-net
+    name: sportra.net
+    url: "https://sportra.net"
+    method: GET
+
+  - id: talencia-dev
+    name: talencia.dev
+    url: "https://talencia.dev"
+    method: GET
+
+  - id: talencia-io
+    name: talencia.io
+    url: "https://talencia.io"
+    method: GET
+
+  - id: talencia-online
+    name: talencia.online
+    url: "https://talencia.online"
+    method: GET
+
+  - id: talencia-work
+    name: talencia.work
+    url: "https://talencia.work"
+    method: GET
+
+  - id: ticketaty-app
+    name: ticketaty.app
+    url: "https://ticketaty.app"
+    method: GET
+
+  - id: ticketaty-dev
+    name: ticketaty.dev
+    url: "https://ticketaty.dev"
+    method: GET
+
+  - id: ticketaty-io
+    name: ticketaty.io
+    url: "https://ticketaty.io"
+    method: GET
+
+  - id: united-systema-com
+    name: united-systema.com
+    url: "https://united-systema.com"
+    method: GET
+
+  - id: united-systema-net
+    name: united-systema.net
+    url: "https://united-systema.net"
+    method: GET
