@@ -58,11 +58,6 @@ monitors:
     url: "https://fts-zuerich.ch"
     method: GET
 
-  - id: gate-pass-app
-    name: gate-pass.app
-    url: "https://gate-pass.app"
-    method: GET
-
   - id: gate-pass-me
     name: gate-pass.me
     url: "https://gate-pass.me"
@@ -93,11 +88,6 @@ monitors:
     url: "https://getseat.dev"
     method: GET
 
-  - id: go-active-me
-    name: go-active.me
-    url: "https://go-active.me"
-    method: GET
-
   - id: int-vandesign-com
     name: int-vandesign.com
     url: "https://int-vandesign.com"
@@ -122,20 +112,15 @@ monitors:
     name: psgacademy.qa
     url: "https://psgacademy.qa"
     method: GET
-
-  - id: sporti-fy-app
-    name: sporti-fy.app
-    url: "https://sporti-fy.app"
+    
+  - id: register-psgacademy-qa
+    name: register.psgacademy.qa
+    url: "https://register.psgacademy.qa"
     method: GET
 
-  - id: sporti-fy-io
-    name: sporti-fy.io
-    url: "https://sporti-fy.io"
-    method: GET
-
-  - id: sporti-fy-me
-    name: sporti-fy.me
-    url: "https://sporti-fy.me"
+  - id: nastex-evencia
+    name: nastex.evencia.app
+    url: "https://nastex.evencia.app"
     method: GET
 
   - id: sportrago-com
