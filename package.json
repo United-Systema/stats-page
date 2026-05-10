@@ -29,4 +29,9 @@
     "tailwindcss": "^2.0.1",
     "yaml-loader": "^0.6.0"
   }
+  "resolutions": {
+  "react": "17.0.1",
+  "react-dom": "17.0.1"
+},
+"packageManager": "yarn@1.22.19"
 }
