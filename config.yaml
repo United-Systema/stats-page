@@ -1,6 +1,6 @@
 settings:
   title: "United Systema Status Page"
-  url: "https://stats-page.pages.dev"
+  url: "https://stats.united-systema.com"
   displayDays: 90
   collectResponseTimes: false
   notifySlack: false
